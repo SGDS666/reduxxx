@@ -1,10 +1,14 @@
-// import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/jsx-pascal-case */
+
+import './app.scss'
+
 
 function App() {
+  
+
   return (
     <div className="App">
-      app
+     app
     </div>
   );
 }
