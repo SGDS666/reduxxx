@@ -1,6 +1,6 @@
-/* eslint-disable react/jsx-pascal-case */
-
 import './app.scss'
+import Dog from './components/Dog';
+import People from './components/People';
 
 
 function App() {
@@ -8,7 +8,8 @@ function App() {
 
   return (
     <div className="App">
-     app
+      <People/>
+      <Dog/>
     </div>
   );
 }

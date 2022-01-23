@@ -1,0 +1,6 @@
+export const SAFE = 'rgb(26, 156, 26)'
+export const WARING = 'rgb(170, 199, 43)'
+export const DANGER = 'rgb(224, 75, 30)'
+export const WILLDIE = 'black'
+export const REMOVEPLIFE = 'removePeopleLife'
+export const REMOVEDLIFE = 'removedDogLife'
