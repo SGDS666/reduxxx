@@ -1,4 +1,7 @@
 import { combineReducers } from "redux";
-import plifeReducer from "./Plife";
-
-export default combineReducers({plifeReducer})
+import PlifeReducer from "./Plife";
+import DlifeReducer from "./Dlife";
+export default combineReducers({
+    PlifeReducer,
+    DlifeReducer
+})

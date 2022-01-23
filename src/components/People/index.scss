@@ -1,8 +1,13 @@
 #people{
-    width: 30vw;
+    width: 40vw;
     height: 80vh;
     background-color: aqua;
     position: absolute;
     left: 0;
     top: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }

@@ -2,11 +2,15 @@ import Life from '../Life'
 import ValueLable from '../ValueLable'
 import './index.scss'
 import { connect } from 'react-redux'
-import RemovePeopleLife from '../../redux/actions/Plife'
-const People = ({lifeV,RP}) => {
+import {RemovePeopleLife,AddPeopleLife} from '../../redux/actions/Plife'
+import {RemoveDogLife,AddDogLife}from '../../redux/actions/Dlife'
+const People = ({lifeV,RL,AL}) => {
     
     const attack = () => {
-        RP(10)
+        RL(10)
+    }
+    const recovery = () => {
+        AL(5)
     }
     return (
         <div id="people">
@@ -14,12 +18,16 @@ const People = ({lifeV,RP}) => {
                     <Life lifeV={lifeV}/>
                 </ValueLable>
                 
-            <button onClick={attack}>点击自伤</button>
+            <button onClick={attack}>点击攻击小狗</button>
+            <button onClick={recovery}>点击回血</button>
         </div>
     )
 }
 
 export default connect(
-    state => ({lifeV:state.plifeReducer}),
-    {RP:RemovePeopleLife}
+    state => ({lifeV:state.PlifeReducer}),
+    {
+        RL:RemoveDogLife,
+        AL:AddPeopleLife,
+    }
 )(People)

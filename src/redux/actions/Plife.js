@@ -1,7 +1,6 @@
-import {REMOVEPLIFE} from '../../conston'
+import {REMOVEPLIFE,ADDPLIFE} from '../../conston'
 
-const RemovePeopleLife = (data) => {
-    
-    return ({type:REMOVEPLIFE,data})
-}
-export default RemovePeopleLife
+export const RemovePeopleLife = data =>  ({type:REMOVEPLIFE,data})
+
+
+export const AddPeopleLife = data => ({type:ADDPLIFE,data})
